@@ -4,7 +4,10 @@ from typing import Any
 from oak_dev_utils.login import login_and_set_token
 from oak_dev_utils.oak_args_parse.types import Subparsers
 from oak_dev_utils.services.get import get_single_service
-from oak_dev_utils.services.status import display_all_current_services, disply_single_service
+from oak_dev_utils.services.status import (
+    display_all_current_services,
+    disply_single_service,
+)
 
 
 def aux_display_current_services(args: Any) -> None:
