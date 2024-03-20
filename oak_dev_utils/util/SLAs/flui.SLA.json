@@ -1,0 +1,40 @@
+{
+    "sla_version": "v2.0",
+    "customerID": "Admin",
+    "applications": [
+        {
+            "applicationID": "",
+            "application_name": "flui",
+            "application_namespace": "flui",
+            "application_desc": "",
+            "microservices": [
+                {
+                    "microserviceID": "",
+                    "microservice_name": "flui",
+                    "microservice_namespace": "flui",
+                    "virtualization": "container",
+                    "one_shot": true,
+                    "cmd": [
+                        "mosquitto_sub",
+                        "-h",
+                        "192.168.178.44",
+                        "-p",
+                        "9027",
+                        "-t",
+                        "flui"
+                    ],
+                    "memory": 100,
+                    "vcpus": 1,
+                    "vgpus": 0,
+                    "vtpus": 0,
+                    "bandwidth_in": 0,
+                    "bandwidth_out": 0,
+                    "storage": 0,
+                    "code": "docker.io/efrecon/mqtt-client:latest",
+                    "state": "",
+                    "added_files": []
+                }
+            ]
+        }
+    ]
+}

@@ -8,4 +8,6 @@ class KnownSLA(CustomEnum):
     BUILDER = "fl_client_env_builder"
     ENDLESS_BUILDER = "endless_builder"
     ENDLESS_CONDA = "endless_conda"
+    ENDLESS_FLUI = "endless_flui"
+    FLUI = "flui"
     SINGLE_SERVICE = "single_service"
